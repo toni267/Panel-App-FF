@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: #f39c12;
+}
+
+.app-header {
+    padding: 15px;
+    background-color: #8B814C;
+ 
+}
+
+.app-logo {
+    width: 50px;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.form-container, .menu-container, .game-container, .switch-container, .selected-game {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #8B814C;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+.game-option {
+    padding: 10px;
+    background-color: #555;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.game-option:hover {
+    background-color: #f39c12;
+}
+
+.selected-game {
+    background-color: #444;
+}
+
+.game-logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch-option {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #555;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+.switch-option:hover {
+    background-color: #f39c12;
+    transform: scale(1.1);
+}
+
+.switch-option.active {
+    background-color: #e67e22;
+}
+
+@keyframes moveText {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+/* Thông báo thành công */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    animation: slide-up 0.5s forwards;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        .icon {
+            width: 50px;
+            height: 50px;
+            border: 3px solid blue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+
+        .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text {
+            font-size: 20px;
+            color: red;
+            white-space: nowrap;
+            animation: scrollText 5s linear infinite;
+        }
+        
+        

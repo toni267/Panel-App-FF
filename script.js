@@ -105,7 +105,7 @@ function enterGame() {
 
 // Hàm liên hệ người bán
 function contactSeller() {
-    alert("Liên hệ người bán qua email: seller@example.com");
+    alert("Liên hệ người bán qua email: nguyendinhgiabao26072007@gmail.com");
 }
 
 // Hàm hiển thị game Free Fire Max
